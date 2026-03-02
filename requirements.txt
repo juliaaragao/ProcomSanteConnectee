@@ -1,0 +1,4 @@
+lamp-core==2021.10.4
+python-decouple==3.8
+folium==0.17.0
+tkwebview2==3.5.0
