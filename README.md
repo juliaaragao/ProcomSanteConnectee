@@ -1,5 +1,6 @@
 v2 - Procom Santé Connectée - updated 2/2026
-v1 - 
+
+v1 - Initial codebase and README by Mr. Punn Chunwimaleung (2024)
 
 # Export Activity and Sensor Data Script
 
@@ -51,12 +52,12 @@ To get the `RESEARCHER` ID:
 Run the script with the following command:
 
 for exporting activity data:
-`python export_activity_data_script.py`
+`python export_data_activity.py`
 
 or
 
 for exporting sensor data:
-`python export_sensor_data_script.py`
+`python export_sensor_data_sensor_csv.py`
 
 or
 
