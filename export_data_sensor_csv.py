@@ -2,7 +2,7 @@ import LAMP
 import csv
 import datetime
 from decouple import config
-from utility import get_num_input_from_list
+from utility import ensure_parent_dir, get_num_input_from_list
 import json
 from zoneinfo import ZoneInfo
 import os
@@ -50,6 +50,7 @@ for participant_id, events in result.items():
 
 # Define CSV file name
 csv_filename = f'output/sensor/general/general_lamp_export_sensor_{name}_{str(datetime.datetime.now()).split(" ")[0]}.csv'
+ensure_parent_dir(csv_filename)
 
 # Write to CSV - general export
 try:
@@ -79,6 +80,7 @@ for events in result.values():
         sensor_types.add(event['sensor'])
 for sensor_type in sensor_types:
     csv_filename = f'output/sensor/{sensor_type}_export_sensor_{name}_{str(datetime.datetime.now()).split(" ")[0]}.csv'
+    ensure_parent_dir(csv_filename)
     try:
         with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
             # determine all possible keys in data field for this sensor type

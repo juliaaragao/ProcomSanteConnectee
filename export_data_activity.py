@@ -2,7 +2,7 @@ import LAMP
 import csv
 import datetime
 from decouple import config
-from utility import get_num_input_from_list
+from utility import ensure_parent_dir, get_num_input_from_list
 
 # Connect to LAMP server
 LAMP.connect(server_address=config('URL', cast=str),
@@ -37,6 +37,7 @@ for identifier in participants_to_export:
 
 # Define CSV file name
 csv_filename = f'output/activity/aexport_activity_{name}_{str(datetime.datetime.now()).split(" ")[0]}.csv'
+ensure_parent_dir(csv_filename)  # Ensure the parent directory exists before writing to the file
 
 # Write to CSV
 try:
