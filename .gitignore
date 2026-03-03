@@ -4,8 +4,8 @@
 !.env.example
 
 # # ---- Outputs / generated data ----
-# output/
-# *.csv
+output/
+*.csv
 
 # ---- Python cache ----
 __pycache__/
