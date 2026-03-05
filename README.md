@@ -2,7 +2,7 @@ Crédits / Auteurs
 Ce projet est basé sur une première version développée par Mr. Punn Chunwimaleung (2024)
 Le code et ce README ont ensuite été adaptés et améliorés par Procom Santé Connectée - updated 2/2026
 
-# Modifications principales (Julia)
+# Modifications principales (v2)
 
 
 # Export Activity and Sensor Data Script
