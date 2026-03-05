@@ -1,6 +1,9 @@
-v2 - Procom Santé Connectée - updated 2/2026
+Crédits / Auteurs
+Ce projet est basé sur une première version développée par Mr. Punn Chunwimaleung (2024)
+Le code et ce README ont ensuite été adaptés et améliorés par Procom Santé Connectée - updated 2/2026
 
-v1 - Initial codebase and README by Mr. Punn Chunwimaleung (2024)
+# Modifications principales (Julia)
+
 
 # Export Activity and Sensor Data Script
 
